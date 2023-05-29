@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); /*variables scss*/
-/*Colors*/
-/*Font*/
-/*Font weight*/
-/*Margins*/
-/*z index*/
-/*Responsive*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@import "./styles/variable";
+
 /*Base*/
 * {
   margin: 0;
@@ -20,20 +17,20 @@ body,
 button,
 input,
 textarea {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-family: $body-font;
+  font-size: $normal-font-size;
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(228, 2.99%, 67.25%);
+  background-color: $body-color;
+  color: $text-color;
 }
 
 h1,
 h2,
 h3 {
-  color: hsl(224.81, 81.05%, 37.25%);
-  font-weight: 600;
+  color: $title-color;
+  font-weight: $font-semi-bold;
 }
 
 ul {
@@ -46,7 +43,7 @@ a {
 
 button {
   cursor: pointer;
-  border: 1px solid hsl(224.81, 81.05%, 37.25%);
+  border: 1px solid $first-color;
   outline: none;
 }
 
@@ -54,6 +51,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+//Loader
+
+
+
 
 /*css classes*/
 .section {
@@ -61,13 +62,13 @@ img {
 }
 
 .section__title {
-  font-size: 2.5rem;
-  color: hsl(224.81, 81.05%, 37.25%);
+  font-size: $h1-font-size;
+  color: $title-color;
 }
 
 .section__subtitle {
   display: block;
-  font-size: 1.25rem;
+  font-size: $h3-font-size;
   margin: 1.5rem;
 }
 
@@ -91,22 +92,22 @@ img {
 /*Buttons*/
 .button {
   display: inline-block;
-  background-color: hsl(224.81, 81.05%, 37.25%);
-  color: hsl(0, 0%, 100%);
+  background-color: $first-color;
+  color: $body-color;
   padding: 1.25rem 3rem;
-  font-weight: 500;
+  font-weight: $font-medium;
   margin-right: 1rem;
   text-align: center;
 }
 
 .button:hover {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(224.81, 81.05%, 37.25%);
-  border: 1px solid hsl(224.81, 81.05%, 37.25%);
+  background-color: $body-color;
+  color: $first-color;
+  border: 1px solid $first-color;
 }
 
 .button__icon {
-  margin-left: 0.2rem;
+  margin-left: $mb-0-5;
 }
 
 .button--flex {
@@ -116,27 +117,35 @@ img {
 
 @media screen and (max-width: 992px) {
   .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: $mb-1-5;
+    margin-right: $mb-1-5;
   }
+
   .button {
     padding: 1rem 1.75rem;
   }
+
   .section {
     padding: 5rem 0 4rem;
   }
 }
+
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0 4.5rem 0;
   }
+
   .section__subtitle {
-    margin-bottom: 3rem;
+    margin-bottom: $mb-3;
   }
 }
+
+@media screen and (max-width: 576px) {
+}
+
 @media screen and (max-width: 350px) {
   .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: $mb-1;
+    margin-right: $mb-1;
   }
-}/*# sourceMappingURL=App.css.map */
+}
