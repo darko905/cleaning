@@ -33,7 +33,7 @@
   font-size: 1.25rem;
 }
 .nav__logo-img {
-  width: 130px;
+  width: 100px;
   height: 100px;
 }
 @media screen and (max-width: 1024px) {
@@ -88,7 +88,7 @@
     width: 50%;
     height: 100%;
     top: 0;
-    right: -100%;
+    left: -100%;
     padding: 4rem 0 0 3rem;
     z-index: 100;
     transition: 0.4s;
@@ -115,12 +115,12 @@
     color: hsl(0, 0%, 100%);
   }
   .nav__logo-img {
-    width: 80px;
+    width: 60px;
     height: 60px;
   }
   /*show menu*/
   .show-menu {
-    right: 0;
+    left: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -130,7 +130,7 @@
   .nav__menu {
     position: fixed;
     background-color: hsl(224.81, 81.05%, 37.25%);
-    width: 100%;
+    width: 60%;
     height: 100%;
     top: 0;
     right: -100%;
@@ -160,12 +160,184 @@
     color: hsl(0, 0%, 100%);
   }
   .nav__logo-img {
-    width: 80px;
+    width: 60px;
     height: 60px;
   }
   /*show menu*/
   .show-menu {
     right: 0;
+  }
+}
+.home__bottom-img {
+  bottom: 0;
+  left: 0;
+}
+.home__bottom-img img {
+  width: 100%;
+  height: 170px;
+}
+@media screen and (max-width: 992px) {
+  .home__bottom-img img {
+    height: 100px;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home__bottom-img img {
+    height: 100px;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+  }
+}
+
+.home {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/src/images/Hero/HeroBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 768px) {
+  .home {
+    background-size: cover;
+    background-position: top;
+  }
+}
+.home__content {
+  padding-top: 12.5rem;
+}
+@media screen and (max-width: 992px) {
+  .home__content {
+    padding-top: 3rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home__content {
+    padding-top: 3rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.home__title {
+  font-size: 4rem;
+  margin: 2rem 0;
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 768px) {
+  .home__title {
+    font-size: 1.8rem;
+  }
+}
+.home__title span {
+  color: hsl(224.81, 81.05%, 37.25%);
+}
+.home__subtitle {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+.home__social {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.home__social-icons {
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 768px) {
+  .home__social {
+    margin: 1.5rem auto;
+    justify-content: center;
+  }
+}
+
+.plan__container {
+  grid-template-columns: repeat(2, 600px);
+  justify-content: center;
+  gap: 3rem;
+}
+.plan__content {
+  padding-left: 140px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.plan__content::before {
+  position: absolute;
+  top: -15px;
+  bottom: -15px;
+  right: 0;
+  left: 58px;
+  content: "";
+  border: 1px solid #e4e5ea;
+  border-radius: 10px;
+  transition: all 500ms ease;
+  z-index: -1;
+}
+.plan__content:hover:before {
+  background-color: hsl(224.81, 81.05%, 37.25%);
+  border: 1px solid hsl(224.81, 81.05%, 37.25%);
+}
+.plan__content:hover .plan__title {
+  color: hsl(0, 0%, 100%);
+}
+.plan__icons {
+  font-size: 7rem;
+  padding: 10px;
+}
+.plan__title {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.plan__descritpion {
+  margin-bottom: 1.5rem;
+}
+
+.plan__circle-two {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #e4e5ea;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+  transition: all 500ms ease;
+  top: 0;
+  left: 0;
+}
+
+.plan__circle-two img {
+  z-index: 1;
+}
+
+.plan__circle-two::before {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  content: "";
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .plan__container {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .plan__container {
+    grid-template-columns: 1fr;
   }
 }
 /*Base*/
@@ -263,9 +435,9 @@ img {
 }
 
 .button:hover {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(224.81, 81.05%, 37.25%);
-  border: 1px solid hsl(224.81, 81.05%, 37.25%);
+  background-color: hsl(42.35, 100%, 50%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(42.35, 100%, 50%);
 }
 
 .button__icon {

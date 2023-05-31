@@ -2,6 +2,10 @@
 
 @import "./styles/variable";
 @import "./styles/navbar";
+@import './styles/hero';
+@import './styles/plan';
+
+
 /*Base*/
 * {
   margin: 0;
@@ -101,9 +105,9 @@ img {
 }
 
 .button:hover {
-  background-color: $body-color;
-  color: $first-color;
-  border: 1px solid $first-color;
+  background-color: $first-color-yellow;
+  color: $body-color;
+  border: 1px solid $first-color-yellow;
 }
 
 .button__icon {
