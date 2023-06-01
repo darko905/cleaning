@@ -1,6 +1,6 @@
 .plan{
     &__container{
-        grid-template-columns: repeat(2, 600px);
+        grid-template-columns: repeat(3, 400px);
         justify-content: center;
         gap: 3rem;
         
@@ -8,6 +8,7 @@
     }
     &__content{
         padding-left: 140px;
+        padding-right: 5px;
         margin-bottom: 60px;
         position: relative;
         
@@ -75,6 +76,7 @@
 }
 .plan__circle-two img{
     z-index: 1;
+    width: 80px;
 }
 
 .plan__circle-two::before {

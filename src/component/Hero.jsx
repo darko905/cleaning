@@ -12,21 +12,9 @@ const Hero = () => {
         <div className="home__content grid">
           <div className="home__data">
             <h1 className="home__title">
-              Čišćcenje komercijalnih i stambenih objekata na <span>Zlatiboru</span>
+              Čišćcenje komercijalnih i stambenih<br/> objekata na <span>Zlatiboru</span>
             </h1>
             <h3 className="home__subtitle">Profesionalne usluge čišćcenja</h3>
-            {/* <div className="home__social">
-              <Link className="home__social-icons">
-                <AiFillPhone />
-              </Link>
-              <Link className="home__social-icons">
-                <AiFillInstagram />
-              </Link>
-              <Link className="home__social-icons">
-                <AiOutlineMail />
-              </Link>
-            </div> */}
-
             <button className="button button--flex">
               Pogledajte više <BsArrowRightShort />
             </button>
