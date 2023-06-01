@@ -1,0 +1,44 @@
+
+.counter{
+    // height: 40vh;
+    background-color: $title-color;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/src/images/Line/counter-one-bg-1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4rem;
+    &__container {
+        grid-template-columns: repeat(3, 400px);
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 2.5rem;
+      }
+      &__content {
+        text-align: center;
+        padding: 1rem 1rem;
+        
+       
+      }
+
+      &__icons{
+            font-size: 4rem;
+            width: 100px;
+            padding: 10px;
+            color: $first-color-yellow;
+        }
+        &__title{
+            color: $body-color;
+            font-size: $h1-font-size;
+        }
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .counter__container{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}

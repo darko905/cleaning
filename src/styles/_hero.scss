@@ -1,10 +1,21 @@
 .home__bottom-img{
-    bottom: 0;
-    left: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      right: 0;
+      height: 231px;
+      z-index: 1;
 
     img{
-        width: 100%;
-        height: 170px;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+        // width: 100%;
+        // height: 170px;
         @media screen and (max-width: 992px){
           height: 100px;
           position: absolute;
@@ -41,7 +52,7 @@
   }
   
   &__content {
-    padding-top: 12.5rem;
+    padding-top: 4rem;
 
     @media screen and (max-width: 992px) {
       padding-top: 3rem;
@@ -56,7 +67,7 @@
   }
 
   &__title {
-    font-size: $big-font-size;
+    font-size: 2rem;
     margin: 2rem 0;
     color: $body-color;
    
@@ -67,7 +78,21 @@
     }
 
     span {
-      color: $first-color;
+      position: relative;
+      display: inline-block;
+    }
+
+    span::before{
+    position: absolute;
+    bottom: 1px;
+    left: 6px;
+    right: 0;
+    background-image: url(/src/images/Line/shape.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 11px;
+    content: "";
+    // z-index: -1;
     }
   }
 
