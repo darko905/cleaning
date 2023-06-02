@@ -406,7 +406,12 @@
 .about-main__text span {
   display: inline-flex;
   align-items: center;
-  margin: 3rem auto;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .about-main__text span {
+    margin: 1rem auto;
+  }
 }
 .about-main__text h3 {
   font-size: 1.25rem;
@@ -572,6 +577,323 @@
     height: auto;
   }
 }
+.swiper-container {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 2rem;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.steps {
+  text-align: center;
+}
+.steps span {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+}
+.steps span::after {
+  content: "";
+  background-color: hsl(42.35, 100%, 50%);
+  width: 20px;
+  height: 3px;
+  margin-left: 10px;
+}
+.steps__container {
+  grid-template-columns: repeat(3, 400px);
+  background-image: url("/src/images/Line/process-line.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+.steps__content {
+  text-align: center;
+  padding: 1rem 1rem;
+}
+.steps__circle {
+  position: relative;
+}
+.steps__count {
+  position: absolute;
+  top: 0;
+  left: 110px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsl(224.81, 81.05%, 37.25%);
+  z-index: 2;
+  font-size: 1.5rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 768px) {
+  .steps__count {
+    left: 80px;
+  }
+}
+.steps__icons {
+  width: 120px;
+}
+.steps__title {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .steps__container {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .steps__container {
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
+  .steps__content {
+    padding: 1rem !important;
+  }
+}
+.book-banner {
+  display: flex;
+  width: 100%;
+  height: 12rem;
+  background-image: url("/src/images/Line/counter-one-bg-1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: hsl(42.35, 100%, 50%);
+}
+@media (max-width: 768px) {
+  .book-banner {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem 0;
+  }
+}
+.book-banner__overlay {
+  opacity: 0.89;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.text-content {
+  color: white;
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+@media (max-width: 768px) {
+  .text-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+.text-content h2 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 768px) {
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+}
+.text-content h2 span {
+  position: relative;
+  display: inline-block;
+}
+.text-content h2 span::before {
+  position: absolute;
+  bottom: -36px;
+  left: -31px;
+  right: 0;
+  background-image: url(/src/images/Line/shape-circles.png);
+  background-repeat: no-repeat;
+  width: 258px;
+  height: 121px;
+  content: "";
+  z-index: 20;
+}
+@media (max-width: 768px) {
+  .text-content h2 span::before {
+    display: none;
+  }
+}
+.text-content-contact {
+  display: flex;
+  font-size: 2.5rem;
+  gap: 1rem;
+  align-items: center;
+  color: hsl(224.81, 81.05%, 37.25%);
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .text-content-contact {
+    font-size: 1.5rem;
+  }
+}
+
+.choose-main {
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .choose-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+@media (max-width: 520px) {
+  .choose-main {
+    max-width: 100%;
+  }
+}
+.choose-main__img {
+  width: 43rem;
+  height: 33rem;
+  position: relative;
+}
+@media (max-width: 960px) {
+  .choose-main__img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 520px) {
+  .choose-main__img {
+    width: 100%;
+    height: auto;
+    margin-left: -1.5rem;
+  }
+}
+.choose-main__text {
+  color: hsl(228, 2.99%, 67.25%);
+  display: flex;
+  flex-direction: column;
+}
+.choose-main__text-span {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .choose-main__text-span {
+    margin: 1rem auto;
+  }
+}
+.choose-main__text h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.choose-main__text-span::after {
+  content: "";
+  background-color: hsl(42.35, 100%, 50%);
+  width: 20px;
+  height: 3px;
+  margin-left: 10px;
+}
+.choose-main__text h2 {
+  line-height: 1.2;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.choose-main__text h2 span {
+  position: relative;
+  display: inline-block;
+}
+.choose-main__text h2 span::before {
+  position: absolute;
+  bottom: 1px;
+  left: 6px;
+  right: 0;
+  background-image: url(/src/images/Line/shape.png);
+  background-repeat: no-repeat;
+  width: 145x;
+  height: 11px;
+  content: "";
+}
+@media (max-width: 768px) {
+  .choose-main__text h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+}
+.choose-main__text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.choose-main__text__icons {
+  display: grid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 520px) {
+  .choose-main__text__icons {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .choose-main__text__icons p {
+    margin-top: 0;
+  }
+}
+.choose-main__text__icons__box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 520px) {
+  .choose-main__text__icons__box {
+    align-items: center;
+  }
+}
+.choose-main__text__icons__box .last-fk {
+  width: 5rem;
+}
+.choose-main__text__icons__box-img {
+  color: hsl(42.35, 100%, 50%);
+  font-size: 1.25rem;
+}
+.choose-main__text__icons__box span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 520px) {
+  .choose-main__text__icons__box span {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+.choose-main__text__icons__box span h4 {
+  font-size: 4.6rem;
+}
+
 /*Base*/
 * {
   margin: 0;
@@ -642,7 +964,7 @@ img {
   right: 0;
   background-image: url(/src/images/Line/shape.png);
   background-repeat: no-repeat;
-  width: 160px;
+  width: 130px;
   height: 11px;
   content: "";
 }

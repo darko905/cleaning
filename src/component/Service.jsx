@@ -13,7 +13,7 @@ const Service = () => {
         <p>Odabrane usluge</p>
       </span>
       <h2 className="section__title">
-        Mi pružamo najbolje usluge čišćenja na <span>Zlatiboru,</span> i šire!
+        Mi pružamo usluge čišćenja na <span>Zlatiboru,</span> i šire!
       </h2>
 
       <div className="service__container container grid">

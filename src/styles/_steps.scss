@@ -1,0 +1,83 @@
+.steps {
+  text-align: center;
+  span {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+  }
+  span::after {
+    content: "";
+    background-color: $first-color-yellow;
+    width: 20px;
+    height: 3px;
+    margin-left: 10px;
+  }
+
+  &__container {
+    grid-template-columns: repeat(3, 400px);
+    background-image: url("/src/images/Line/process-line.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+  &__content {
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+  &__circle{
+    position: relative;
+  }
+  &__count{
+    position: absolute;
+    top: 0;
+    left: 110px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $first-color;
+    z-index: 2;
+    font-size: $h2-font-size;
+    text-align: center;
+    color: $body-color;
+    
+    @media screen and (max-width: 768px) {
+        left: 80px;
+    }
+  }
+
+  &__icons {
+    width: 120px;
+    // position: absolute;
+    // left: 145px;
+    // margin-top: 20px;
+    
+  }
+  &__title {
+    font-size: $h3-font-size;
+    margin-bottom: $mb-2;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .steps {
+    &__container {
+      grid-template-columns: repeat(2, 350px);
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .steps {
+    &__container {
+      grid-template-columns: 1fr;
+      background-image: none;
+    }
+    &__content {
+      padding: 1rem !important;
+    }
+  }
+}

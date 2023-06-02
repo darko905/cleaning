@@ -7,7 +7,10 @@
 @import './styles/about';
 @import './styles/service';
 @import './styles/counter';
-
+@import './styles/gallery';
+@import './styles/steps';
+@import './styles/banner';
+@import './styles/choose';
 
 /*Base*/
 * {
@@ -83,7 +86,7 @@ img {
     right: 0;
     background-image: url(/src/images/Line/shape.png);
     background-repeat: no-repeat;
-    width: 160px;
+    width: 130px;
     height: 11px;
     content: "";
     // z-index: -1;
