@@ -3,6 +3,7 @@ import Slika1 from '../images/Gallery/project-1-1.jpg';
 import Slika2 from '../images/Gallery/project-1-2.jpg';
 import Slika3 from '../images/Gallery/project-1-3.jpg';
 import Slika4 from '../images/Gallery/project-1-4.jpg';
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -30,7 +31,7 @@ const Gallery = () => {
   }, []);
   return (
     <section className="section container testominial">
-    <span className="section__subtitle">Pogledajte šta se gostima najviše svidelo</span>
+    <span className="section__subtitle">Pogledajte galeriju naših usluga</span>
     <h2 className="section__title">Galerija</h2>
     <Swiper
       navigation
@@ -54,10 +55,10 @@ const Gallery = () => {
         <img src={Slika4} alt="Slika 4" />
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <img src={Slika2} alt="Slika 2" />
+        <img src={Slika1} alt="Slika 2" />
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <img src={Slika3} alt="Slika 3" />
+        <img src={Slika2} alt="Slika 3" />
       </SwiperSlide>
     </Swiper>
     

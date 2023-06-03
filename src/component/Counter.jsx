@@ -57,7 +57,7 @@ const Counter = () => {
 
             <h3 className="counter__title">
                 {counterStart && 
-                 <CountUp start={0} end={10} duration={3} delay={0}/>
+                 <CountUp start={0} end={10} duration={2} delay={0}/>
                 }
                +
             </h3>

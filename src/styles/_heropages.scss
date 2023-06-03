@@ -1,0 +1,57 @@
+// hero for all pages
+.hero-pages {
+    width: 100%;
+    height: 20rem;
+    background-image: url("/src/images/Line/counter-one-bg-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: $first-color-gray;
+    @media screen and (max-width: 768px) {
+        height: 15rem;
+    }
+  
+    &__overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      
+    }
+  
+    &__text {
+      display: flex;
+      flex-direction: column;
+      z-index: 3;
+      position: relative;
+      width: 100%;
+      height: 21rem;
+      justify-content: center;
+      color: $title-color;
+  
+      h3 {
+        font-size: 3.6rem;
+        margin-bottom: 0.5rem;
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+        }
+      }
+  
+      p {
+        font-size: $normal-font-size;
+        font-weight: 600;
+  
+        a {
+          color: $title-color;
+          text-decoration: none;
+          transition: all 0.2s;
+  
+          &:hover {
+            color: $first-color;
+          }
+        }
+      }
+    }
+  }
