@@ -4,7 +4,7 @@ import { FiCheckSquare } from "react-icons/fi";
 
 const Choose = () => {
   return (
-    <section className="choose-page">
+    <section className="section choose-page">
       <div className="container">
         <div className="choose-main">
           <img className="choose-main__img" src={ChooseBg} alt="Backround img" />

@@ -8,7 +8,7 @@ import Icon6 from "../images/icons/icon6.png";
 
 const Service = () => {
   return (
-    <section className="section service" id="service">
+    <section className="section service container" id="service">
       <span className="section__subtitle">
         <p>Odabrane usluge</p>
       </span>
