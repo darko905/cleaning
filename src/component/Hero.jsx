@@ -1,9 +1,7 @@
 import React from "react";
-import bgBuble from '../images/Hero/hero-buble.png';
-// import { Link } from "react-router-dom";
 
-// import { AiFillInstagram, AiFillPhone, AiOutlineMail } from "react-icons/ai";
 import { BsArrowRightShort } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,19 +10,20 @@ const Hero = () => {
         <div className="home__content grid">
           <div className="home__data">
             <h1 className="home__title">
-              Čišćcenje komercijalnih i stambenih<br/> objekata na <span>Zlatiboru</span>
+              Čišćcenje komercijalnih i stambenih
+              <br /> objekata na <span>Zlatiboru</span>
             </h1>
             <h3 className="home__subtitle">Profesionalne usluge čišćcenja</h3>
-            <button className="button button--flex">
-              Pogledajte više <BsArrowRightShort />
-            </button>
+            <Link to="/service">
+              <button className="button button--flex">
+                Pogledajte više <BsArrowRightShort />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="home__bottom-img">
-        <img src={bgBuble} alt="buble" />
-      </div>
     </section>
+    
   );
 };
 

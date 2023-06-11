@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Slika1 from '../images/Gallery/project-1-1.jpg';
-import Slika2 from '../images/Gallery/project-1-2.jpg';
-import Slika3 from '../images/Gallery/project-1-3.jpg';
-import Slika4 from '../images/Gallery/project-1-4.jpg';
+import Slika1 from '../images/Gallery/project-1-1.webp';
+import Slika2 from '../images/Gallery/project-1-2.webp';
+import Slika3 from '../images/Gallery/project-1-3.webp';
+import Slika4 from '../images/Gallery/project-1-4.webp';
 
 // Import Swiper styles
 import "swiper/css";

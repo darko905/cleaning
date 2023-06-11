@@ -1,7 +1,7 @@
 import React from "react";
-import Icon1 from "../images/icons/1.png";
-import Icon2 from "../images/icons/2.png";
-import Icon3 from "../images/icons/3.png";
+import Icon1 from "../images/icons/1.webp";
+import Icon2 from "../images/icons/2.webp";
+import Icon3 from "../images/icons/3.webp";
 
 const Steps = () => {
   return (

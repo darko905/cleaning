@@ -6,17 +6,17 @@ import Footer from "../component/Footer";
 import Logo from "../images/Logo/Logo-text.png";
 
 const AboutPage = () => {
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
+    setIsLoading(true);
     setTimeout(() => {
-      setLoading(false);
+      setIsLoading(false);
     }, 2000);
   }, []);
   return (
     <>
-      {loading ? (
+      {isLoading ? (
         <div className="loader-clean">
           <img src={Logo} alt="Logo" />
         </div>
