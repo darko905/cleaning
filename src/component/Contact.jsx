@@ -42,7 +42,7 @@ const Contact = () => {
               <div className="contact__card">
                 {/* <HiOutlineLocationMarker className="contact__card-icon" /> */}
                 <img src={Image3} alt="Location icons"  className="contact__card-icon"/>
-                <span className="contact__card-data">Zlatibor</span>
+                <span className="contact__card-data">Zlatibor, Srbija</span>
               </div>
             </Link>
           </div>

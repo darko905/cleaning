@@ -1,14 +1,21 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { hydrateRoot, render } from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <>
+
+
+const APP = (
   <BrowserRouter>
     <App />
   </BrowserRouter>
-  </>
-  
 );
+
+const rootElement = document.getElementById("root");
+
+
+if (rootElement.hasChildNodes()) {
+  hydrateRoot(APP, rootElement);
+} else {
+  render(APP, rootElement);
+}

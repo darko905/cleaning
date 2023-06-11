@@ -1,5 +1,9 @@
 .footer{
     border-top: 1px solid $first-color;
+    background-image: url("/src/images/Line/shape-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @media (max-width: 768px) {
         padding-bottom: 0 !important;
     }

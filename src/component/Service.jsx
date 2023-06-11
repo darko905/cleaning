@@ -5,6 +5,10 @@ import Icon3 from "../images/icons/icon3.png";
 import Icon4 from "../images/icons/icon4.png";
 import Icon5 from "../images/icons/icon5.png";
 import Icon6 from "../images/icons/icon6.png";
+import Icon7 from "../images/icons/icon7.png";
+import Icon8 from "../images/icons/icon8.png";
+import Icon9 from "../images/icons/icon9.png";
+import Icon10 from "../images/icons/icon10.png";
 
 const Service = () => {
   return (
@@ -99,6 +103,51 @@ const Service = () => {
 
           <p className="service__descritpion">
             Čišćenje i pranje posteljina nakon boravka gostiju
+          </p>
+        </div>
+        <div className="service__content">
+          <div className="ico__circle">
+            <img src={Icon7} alt="bedclothes icon" className="service__icons" />
+          </div>
+
+          <h3 className="service__title">Čišćenje snega</h3>
+
+          <p className="service__descritpion">
+            Čišćenje snega ili dvorišta oko zgrada
+          </p>
+        </div>
+        <div className="service__content">
+          <div className="ico__circle">
+            <img src={Icon8} alt="bedclothes icon" className="service__icons" />
+          </div>
+
+          <h3 className="service__title">Profesionalni Upravnik</h3>
+
+          <p className="service__descritpion">
+            Mozemo da Vam pruzimo uslugu licenciranog upravnika za vodjenje
+            zgrade
+          </p>
+        </div>
+        <div className="service__content">
+          <div className="ico__circle">
+            <img src={Icon9} alt="bedclothes icon" className="service__icons" />
+          </div>
+
+          <h3 className="service__title">Održavanje parkinga</h3>
+
+          <p className="service__descritpion">
+            Održavanje i čišćcenje parking mesta
+          </p>
+        </div>
+        <div className="service__content">
+          <div className="ico__circle">
+            <img src={Icon10} alt="deeal icon" className="service__icons" />
+          </div>
+
+          <h3 className="service__title">Rentiranje Vašeg apartmana</h3>
+
+          <p className="service__descritpion">
+            Usluge rentiranja Vaseg apartmana po dogovoru
           </p>
         </div>
       </div>

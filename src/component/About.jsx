@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMain from "../images/About/AboutImg.png";
+import AboutMain from "../images/About/AboutImg.webp";
 
 import { FiCheckSquare } from "react-icons/fi";
 import { AiFillPhone } from "react-icons/ai";

@@ -39,7 +39,7 @@ const NavBar = () => {
             </li>
             <li className="nav__item" onClick={() => showMenu(!Toogle)}>
               <Link
-                to="/service"
+                to="/usluge"
                 onClick={() => setActiveNav("#service")}
                 className={
                   activeNav === "#service"
@@ -52,7 +52,7 @@ const NavBar = () => {
             </li>
             <li className="nav__item" onClick={() => showMenu(!Toogle)}>
               <Link
-                to="/about"
+                to="/onama"
                 onClick={() => setActiveNav("/about")}
                 className={
                   activeNav === "/about" ? "nav__link active-link" : "nav__link"
@@ -64,7 +64,7 @@ const NavBar = () => {
            
             <li className="nav__item" onClick={() => showMenu(!Toogle)}>
               <Link
-                to="/contact"
+                to="/kontakt"
                 onClick={() => setActiveNav("/contact")}
                 className={
                   activeNav === "/contact"
