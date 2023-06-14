@@ -2,7 +2,7 @@ import React from "react";
 
 import Icon1 from "../images/icons/icon-1.webp";
 import Icon3 from "../images/icons/icon-3.webp";
-import Icon4 from "../images/icons/icon-4.png";
+import Icon4 from "../images/icons/icon-4.webp";
 
 const Plan = () => {
   return (

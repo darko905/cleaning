@@ -1,8 +1,7 @@
 import React from "react";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { hydrateRoot, render } from "react-dom";
-
+import { hydrate, render } from "react-dom";
 
 
 const APP = (
@@ -12,10 +11,8 @@ const APP = (
 );
 
 const rootElement = document.getElementById("root");
-
-
 if (rootElement.hasChildNodes()) {
-  hydrateRoot(APP, rootElement);
+  hydrate(APP, rootElement);
 } else {
   render(APP, rootElement);
 }

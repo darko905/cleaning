@@ -14,7 +14,7 @@ const Hero = () => {
               <br /> objekata na <span>Zlatiboru</span>
             </h1>
             <h3 className="home__subtitle">Profesionalne usluge čišćcenja</h3>
-            <Link to="/service">
+            <Link to="/usluge">
               <button className="button button--flex">
                 Pogledajte više <BsArrowRightShort />
               </button>

@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
-import Image1 from '../images/icons/t-shirt.png'
-import Image2 from '../images/icons/calendar.png'
-import Image3 from '../images/icons/man.png'
+import Image1 from '../images/icons/t-shirt.webp'
+import Image2 from '../images/icons/calendar.webp'
+import Image3 from '../images/icons/man.webp'
 const Counter = () => {
     const [counterStart, setCounterStart] = useState(false);
   return (
