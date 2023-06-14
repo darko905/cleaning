@@ -1,21 +1,18 @@
-
 .home {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/src/images/Hero/HeroBg.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/src/images/Hero/HeroBg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+ 
   @media screen and (max-width: 768px) {
-    background-size: cover;
     background-position: top;
+    width: 100%;
   }
   @media screen and (max-width: 365px) {
-    background-size: cover;
     background-position: top;
   }
-  
+
   &__content {
     padding-top: 4rem;
 
@@ -35,8 +32,6 @@
     font-size: 2rem;
     margin: 2rem 0;
     color: $body-color;
-   
-    
 
     @media screen and (max-width: 768px) {
       font-size: 1.8rem;
@@ -47,17 +42,17 @@
       display: inline-block;
     }
 
-    span::before{
-    position: absolute;
-    bottom: 1px;
-    left: 6px;
-    right: 0;
-    background-image: url(/src/images/Line/shape.png);
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 11px;
-    content: "";
-    // z-index: -1;
+    span::before {
+      position: absolute;
+      bottom: 1px;
+      left: 6px;
+      right: 0;
+      background-image: url(/src/images/Line/shape.png);
+      background-repeat: no-repeat;
+      width: 150px;
+      height: 11px;
+      content: "";
+      // z-index: -1;
     }
   }
 
@@ -68,7 +63,6 @@
     margin-bottom: $mb-2;
     color: $body-color;
   }
- 
 
   &__social {
     display: flex;

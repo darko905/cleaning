@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import AboutPage from "./Pages/AboutPage";
 import Service from "./Pages/ServicePage";
 import ContactPage from "./Pages/ContactPage";
+import PageNotFound from "./Pages/PageNotFound";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route index path="/usluge" element={<Service />} />
         <Route index path="/onama" element={<AboutPage />} />
         <Route index path="/kontakt" element={<ContactPage />} />
+        <Route index path="*" element={<PageNotFound />} />
       </Routes>
     </>
   );

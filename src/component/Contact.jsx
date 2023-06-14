@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Image1 from '../images/icons/envelope.png'
-import Image2 from '../images/icons/phone.png'
-import Image3 from '../images/icons/location.png'
+import Image1 from '../images/icons/envelope.webp'
+import Image2 from '../images/icons/phone.webp'
+import Image3 from '../images/icons/location.webp'
 
 const Contact = () => {
     

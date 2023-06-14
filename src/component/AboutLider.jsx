@@ -1,5 +1,5 @@
 import React from "react";
-import AboutLiderBg from "../images/Gallery/BgAbout.png";
+import AboutLiderBg from "../images/Gallery/BgAbout.webp";
 
 const AboutLider = () => {
   return (
